@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const User = require('./model/user')
 const setCurrentUser = require('./model/middleware/setCurrrentUSER.js')
+import createServer from '@tomphttp/bare-server-node';
 const stripe = require('./model/stripe/connect')
 const hasPlan = require('./model/middleware/hasPlan')
 const bcrypt = require('bcryptjs')
@@ -15,7 +16,8 @@ const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhf
 
 mongoose.connect('mongodb+srv://static:EternalKash69@cluster1.78ugtc7.mongodb.net/?retryWrites=true&w=majority')
 
-app.use('/webhook', bodyParser.raw({ type: 'application/json' }))
+const bare =  createServer('/bare/');
+
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
