@@ -1,16 +1,12 @@
-const express = require('express')
-const stripekey = process.env['secret_key']
+import express from 'express';
 const app = express()
-const path = require('path')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-const User = require('./model/user')
-const setCurrentUser = require('./model/middleware/setCurrrentUSER.js')
+import path from 'path';
+import bodyParser from 'body-parser';
+import mongoose from'mongoose';
+import User from './model/user';
 import createBareServer from '@tomphttp/bare-server-node';
-const stripe = require('./model/stripe/connect')
-const hasPlan = require('./model/middleware/hasPlan')
-const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
+import bcrypt from 'bcryptjs'
+import jwt from 'jsonwebtoken';
 
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
 
