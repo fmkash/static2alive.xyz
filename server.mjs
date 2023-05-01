@@ -3,7 +3,7 @@ const app = express()
 import path from 'path';
 import bodyParser from 'body-parser';
 import mongoose from'mongoose';
-import User from './model/user';
+import User from './model/user.js';
 import createBareServer from '@tomphttp/bare-server-node';
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken';
