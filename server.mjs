@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const User = require('./model/user')
 const setCurrentUser = require('./model/middleware/setCurrrentUSER.js')
-const createServer = require('@tomphttp/bare-server-node')
+import createServer from '@tomphttp/bare-server-node';
 const stripe = require('./model/stripe/connect')
 const hasPlan = require('./model/middleware/hasPlan')
 const bcrypt = require('bcryptjs')
