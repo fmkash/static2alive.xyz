@@ -26,6 +26,33 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+app.get('/public/proxy/index.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/index.js'));
+});
+
+app.get('/public/proxy/sw.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/sw.js'));
+});
+
+app.get('/public/proxy/uv/uv.config.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/uv/uv.config.js'));
+});
+
+
+app.get('/public/proxy/uv/uv.bundle.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/uv/uv.bundle.js'));
+});
+
+
+app.get('/public/proxy/uv/uv.sw.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/uv/uv.sw.js'));
+});
+
+
+app.get('/public/proxy/uv/uv.handler.js',function(req,res){      
+    res.sendFile(path.join(__dirname,'./public/proxy/uv/uv.handler.js'));
+});
+
 app.get('/dashboard/proxy/',function(req,res){      
     res.sendFile(path.join(__dirname,'./public/proxy/'));
 });
