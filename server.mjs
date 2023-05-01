@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express()
 import path from 'path';
+import { dirname } from 'path';
 import bodyParser from 'body-parser';
 import mongoose from'mongoose';
 import User from './model/user.js';
