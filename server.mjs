@@ -9,6 +9,10 @@ import createBareServer from '@tomphttp/bare-server-node';
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken';
 
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
 
 mongoose.connect('mongodb+srv://static:EternalKash69@cluster1.78ugtc7.mongodb.net/?retryWrites=true&w=majority')
