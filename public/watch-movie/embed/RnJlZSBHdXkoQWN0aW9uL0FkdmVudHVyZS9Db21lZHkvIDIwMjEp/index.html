@@ -1,0 +1,25 @@
+<!-- CSS  -->
+ <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+
+<!-- HTML -->
+<video id='hls-example'  class="video-js vjs-default-skin" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; margin:0; padding:0;" controls>
+
+<!--m3u8 Link-->
+<source type="application/x-mpegURL" src="https://t-ca-2.24hoursuptodatecdn.net/_v10/0c7b9e84f71b09425820d86fc763512b2b78c31a6f79504d065c925c47279c9f22b4c59f2a87b2c8f2dfe8186902bcd3718ffba6822ecdcf274fdfde098fc35c51d8b3404e1134b81232db09584fb1e98197ca03b2e580c4e0e0b279d1182b2d927114697e9dcd6e51d8dd38755f14a7afcc7954830e5af7490be877f3a7c093/playlist.m3u8">
+
+<!--Caption Link-->
+<track kind='captions' src='https://cc.2cdns.com/5c/6e/5c6ed5f54fd2077e5e025b245fa969f0/5c6ed5f54fd2077e5e025b245fa969f0.vtt' srclang='en' label='English' />
+</video>
+
+
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<script>
+var player = videojs('hls-example');
+player.play();
+</script>

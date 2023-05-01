@@ -1,0 +1,22 @@
+<!-- CSS  -->
+ <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+
+<!-- HTML -->
+<video id='hls-example'  class="video-js vjs-default-skin" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; margin:0; padding:0;" controls>
+<source type="application/x-mpegURL" src="https://t-ca-1.dokicloud.one/_v10/15fb84e84e707c08d832bf28d74821b01bea9fe7f568e98f837001ed1dbf2450832d005a53b729165e568d0de547e12a46939956620ae03c12f969fb42d5bee0b4a76f277fe65bb225ac79c466db3a72604a07d7cc5fb98e0744f8ed681cbda53e4e8d4e1996691f2d6f9a1a8dc0c1d332424f31955abe96feb0c253885795cd/playlist.m3u8">
+<track kind='captions' src='https://cc.2cdns.com/a7/c8/a7c8ee2aab0227ae814c7e0b09eb937f/eng-8.vtt' srclang='en' label='English' />
+<track kind='captions' src='https://cc.2cdns.com/a7/c8/a7c8ee2aab0227ae814c7e0b09eb937f/spa-9.vtt' srclang='sp' label='Spanish' />
+</video>
+
+
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<script>
+var player = videojs('hls-example');
+player.play();
+</script>

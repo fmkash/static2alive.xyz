@@ -1,0 +1,25 @@
+<!-- CSS  -->
+ <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+
+<!-- HTML -->
+<video id='hls-example'  class="video-js vjs-default-skin" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; margin:0; padding:0;" controls>
+
+<!--m3u8 Link--> 
+<source type="application/x-mpegURL" src="https://t-eu-2.magnewscontent.org/_v10/bec598dedf0d205bae0eadb3c05faca4d23c45115b2189b9b96c9b4dd5b58d6151843a7da14f3a849c4e63d4ba8a6d788b66269fa3c8cfe75c838eecfc8b34771824d7f80e48eed98183fd4b72fb6c33c50f976625e569c3361bdd1f58c7fd59f29efbebfd6f609232e997755e3c88be4696589ca348987b1e29b19a5f58e624/playlist.m3u8">
+
+<!--Caption Link-->
+<track kind='captions' src='https://cc.2cdns.com/c9/72/c97218d211d86684e73addfd63e96199/eng-7.vtt' srclang='en' label='Mr.Pickle' />
+</video>
+
+
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+<script>
+var player = videojs('hls-example');
+player.play();
+</script>
