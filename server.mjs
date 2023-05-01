@@ -12,7 +12,7 @@ const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhf
 
 mongoose.connect('mongodb+srv://static:EternalKash69@cluster1.78ugtc7.mongodb.net/?retryWrites=true&w=majority')
 
-const bare =  createServer('/bare/');
+const bare = createBareServer('/bare/');
 
 
 app.use(bodyParser.json())
